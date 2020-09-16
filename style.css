@@ -202,6 +202,7 @@ body {
 }
 
 .idea {
+  box-sizing: border-box;
   width: 1600px;
   margin: 0 auto;
   padding-top: 295px;
@@ -235,6 +236,7 @@ body {
 }
 
 .community {
+  box-sizing: border-box;
   width: 1600px;
   margin: 0 auto;
   padding-top: 120px;
@@ -281,29 +283,28 @@ body {
   color: #4E4E4E;
 }
 
-.slyder__wrap {
-  width: 894px;
-  overflow-x: hidden;
-}
 
 .slyder {
-  width: 1500px;
+  width: 894px;
   display: flex;
   flex-wrap: nowrap;
+  overflow: hidden;
 }
 
 .slyder__item {
   margin-right: 30px;
-  width: 407px;
+  min-width: 407px;
   height: 244px;
 }
 
 .slyder__img {
-  display: block;
   height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 .rich-code {
+  box-sizing: border-box;
   width: 1600px;
   margin: 0 auto;
   padding-top: 318px;
@@ -331,6 +332,7 @@ body {
 }
 
 .subscription {
+  box-sizing: border-box;
   width: 1600px;
   margin: 0 auto;
   padding: 0;
@@ -376,6 +378,7 @@ body {
 }
 
 .download {
+  box-sizing: border-box;
   width: 1600px;
   margin: 0 auto;
   padding-top: 120px;
@@ -452,11 +455,16 @@ body {
 }
 
 .footer {
+  box-sizing: border-box;
+  background-color: #000000;
+}
+
+
+.footer__wrap{  
   width: 1600px;
   margin: 0 auto;
   padding-top: 58px;
   padding-bottom: 60px;
-  background-color: #000000;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
