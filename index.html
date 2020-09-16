@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,106 @@
   <link href="normalize.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
+  <header class="header">
+    <a class="header__logo link" href="#">
+      <img class="header__img" src="assets/logo.svg" alt="Логотип webdev" width="44px" height="44px">
+    </a>
+
+    <ul class="header__nav list">
+      <li class="header__item"><a class="header__link link" href="#">About</a></li>
+      <li class="header__item"><a class="header__link link" href="#">Syllabus</a></li>
+      <li class="header__item"><a class="header__link link" href="#">Projects</a></li>
+      <li class="header__item"><a class="header__link link" href="#">FAQ</a></li>
+    </ul>
+  </header>
+  <main>
+    <h1 class="visually-hidden">webdev</h1>
+    <div class="your-life__wrap">
+      <section class="your-life">
+        <h2 class="your-life__title title">your life is WebDev</h2>
+        <p class="your-life__text">Whatever the approach to development may be, the final program must satisfy some
+          fundamental properties </p>
+        <button class="your-life__btn like-btn" type="button">get started</button>
+        <ul class="list social your-life__social">
+          <li><a class="social__link--email" href=""><span class="visually-hidden">email</span></a></li>
+          <li><a class="social__link--fb " href=""> <span class="visually-hidden">facebook</span></a></li>
+          <li><a class="social__link--ig" href=""><span class="visually-hidden">instagram</span></a></li>
+          <li><a class="social__link--youtube " href=""><span class="visually-hidden">youtube</span></a></li>
+        </ul>
+      </section>
+    </div>
+    <section class="idea">
+      <h3 class="idea__title">Rappresent your idea with a&nbsp;smart Design</h3>
+      <p class="idea__text">Tasks accompanying and related to programming include: testing, debugging, source code
+        maintenance,<b> implementation of build systems</b>, and management of derived artifacts, such as the machine
+        code of computer programs. </p>
+      <button class="idea__btn like-btn" type="button">get started</button>
+    </section>
+    <section class="community">
+      <div class="community__wrap">
+        <img class="community__avatar" src="assets/avatar.png" alt="женщина на розовом фоне">
+        <h3 class="community__title">our community</h3>
+        <p class="community__text">A hacker is any skilled computer expert that uses their technical knowledge to
+          overcome a problem, but it can also mean a security hacker in common language</p>
+      </div>
+
+      <div class="slyder__wrap">
+        <ul class="community__slyder list slyder">
+          <li class="slyder__item"><img class="slyder__img" src="assets/slider-item-1.jpg" alt="" width="407"
+              height="244"> </li>
+          <li class="slyder__item"><img class="slyder__img" src="assets/slider-item-2.jpg" alt="" width="407"
+              height="244"> </li>
+          <li class="slyder__item"><img class="slyder__img" src="assets/slider-item-3.jpg" alt="" width="407"
+              height="244"> </li>
+          <!-- <li class="slyder__item"><img class="slyder__img" src="assets/slider-item-1.jpg" alt="" width="407"
+              height="244"> </li>
+          <li class="slyder__item"><img class="slyder__img" src="assets/slider-item-2.jpg" alt="" width="407"
+              height="244"> </li> -->
+        </ul>
+      </div>
+    </section>
+
+    <section class="rich-code">
+      <h3 class="rich-code__title">Implement right Code</h3>
+      <p class="rich-code__text">These might be considered part of the programming process, but often the term software
+        development is used for this larger process with the term programming, implementation </p>
+      <button class="rich-code__btn like-btn" type="button">Learn more</button>
+    </section>
+
+    <section class="subscription">
+      <h3 class="subscription__title">sign up for our newsletter</h3>
+      <form class="subscription__form" method="GET">
+        <label class="subscription__label" aria-label="подпишись на наши новости">
+          <input class="subscription__input" type="text" placeholder="E-mail">
+        </label>
+        <button class="subscription__btn" aria-label="Нажми меня после ввода емейла"></button>
+      </form>
+    </section>
+
+    <section class="download">
+      <h3 class="download__title">Download the App</h3>
+      <p class="download__text">Machine code was the language of early programs, written in the instruction set of the particular machine, often in binary notation.</p>
+      <div class="download__link-wrap">
+        <a class="download__link download__link--apple link like-btn" href="">apple store</a>
+        <a class="download__link download__link--google link like-btn" href="">Play Market</a>
+      </div>
+       </section>
+  </main>
+  <footer class=" footer">
+<ul class="footer__list list">
+<li class="footer__item"><a class="footer__link link" href="">Credits</a></li>
+<li class="footer__item"><a class="footer__link link" href="">Privacy</a></li>
+<li class="footer__item"><a class="footer__link link" href="">Our teams</a></li>
+</ul>
+
+<a class="footer__logo link" href="#">
+  <img class="footer__img" src="assets/logo.svg" alt="Логотип webdev" width="44px" height="44px">
+</a>
+
+<p class="footer__copyright">by TonYem for RSS at 2020</p>
+  </footer>
 </body>
+
 </html>
