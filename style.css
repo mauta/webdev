@@ -64,7 +64,7 @@ body {
   outline: none;
 }
 
-.link:hover{
+.link:hover {
   opacity: 0.7;
 }
 
@@ -107,6 +107,18 @@ body {
   line-height: 140%;
   color: #FFFFFF;
   opacity: 0.8;
+}
+
+.header__link:active,
+.header__link:focus {
+  border-bottom: 1px solid #FFFFFF;
+  font-weight: 500;
+}
+
+.header__link-active {
+  border-bottom: 1px solid #FFFFFF;
+  font-weight: 500;
+  color: #FFFFFF;
 }
 
 .header__logo {
@@ -166,6 +178,7 @@ body {
   color: #FFFFFF;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 .like-btn:hover {
@@ -276,6 +289,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
+  position: relative;
 }
 
 .community__info {
@@ -330,6 +344,54 @@ body {
   height: 100%;
   width: 100%;
   object-fit: contain;
+}
+
+.slyder__pages {
+  width: 104px;
+  position: absolute;
+  top: 75px;
+  right: 256px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slyder__number {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+  color: #373737;
+}
+
+.slyder__btn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.slyder__btn:hover {
+  opacity: 0.6;
+}
+
+.slyder__btn:active,
+.slyder__btn:focus {
+  opacity: 0.3;
+}
+
+.slyder__btn--start {
+  background-image: url(/assets/previous.svg);
+  background-repeat: no-repeat;
+  background-position: 10px 8px;
+}
+
+.slyder__btn--end {
+  background-image: url(/assets/next.svg);
+  background-repeat: no-repeat;
+  background-position: 6px 8px;
 }
 
 .rich-code {
@@ -387,12 +449,12 @@ body {
   width: 340px;
   height: 46px;
   box-sizing: border-box;
-  
+
 }
 
 .subscription__input:hover,
 .subscription__input:active,
-.subscription__input:focus{
+.subscription__input:focus {
   font-size: larger;
 }
 
@@ -418,9 +480,9 @@ body {
 
 }
 
-.subscription__btn:hover{
+.subscription__btn:hover {
   background-color: #009CC2;
-  
+
 }
 
 .subscription__btn:active,
