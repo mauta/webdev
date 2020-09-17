@@ -61,6 +61,16 @@ body {
 
 .link {
   text-decoration: none;
+  outline: none;
+}
+
+.link:hover{
+  opacity: 0.7;
+}
+
+.link:active,
+.link:focus {
+  opacity: 0.4;
 }
 
 .header {
@@ -102,7 +112,7 @@ body {
 .header__logo {
   position: absolute;
   top: 25px;
-  left: calc(50% - 24px);
+  left: calc(50% - 22px);
 }
 
 .your-life__wrap {
@@ -117,13 +127,14 @@ body {
   padding-bottom: 90px;
   background-image: url(assets/your_life.jpg);
   background-repeat: no-repeat;
-  background-position: -2px -89px;
+  background-position: 0px -89px;
   color: #FFFFFF;
 }
 
 .your-life__title {
   margin: 0;
   margin-bottom: 23px;
+  padding-left: 4px;
   font-weight: bold;
   font-size: 64px;
   line-height: 75px;
@@ -145,6 +156,7 @@ body {
 .like-btn {
   width: 184px;
   height: 46px;
+  padding-top: 3px;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -153,6 +165,17 @@ body {
   background: #00AFDB;
   color: #FFFFFF;
   border: none;
+  outline: none;
+}
+
+.like-btn:hover {
+  background: #009CC2;
+}
+
+.like-btn:active,
+.like-btn:focus {
+  background: #009CC2;
+  opacity: 0.5;
 }
 
 .your-life__btn {
@@ -206,11 +229,11 @@ body {
   width: 1600px;
   margin: 0 auto;
   padding-top: 295px;
-  padding-left: 418px;
+  padding-left: 268px;
   padding-bottom: 314px;
   background-image: url(assets/content-image-1.jpg);
   background-repeat: no-repeat;
-  background-position: 1073px 120px;
+  background-position: 923px 120px;
 }
 
 .idea__title,
@@ -235,25 +258,31 @@ body {
   color: #4E4E4E;
 }
 
+.idea__btn {
+  padding-top: 3px;
+}
+
 .community {
+  background-color: #F5F6F7;
+}
+
+.community__wrap {
   box-sizing: border-box;
   width: 1600px;
   margin: 0 auto;
   padding-top: 120px;
-  padding-left: 418px;
+  padding-left: 269px;
   padding-bottom: 140px;
-  background-color: #F5F6F7;
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
-
 }
 
-.community__wrap {
-  width: 300px;
+.community__info {
+  width: 298px;
   padding-top: 35px;
   padding-bottom: 33px;
-  margin-right: 138px;
+  margin-right: 139px;
 }
 
 .community__avatar {
@@ -308,11 +337,11 @@ body {
   width: 1600px;
   margin: 0 auto;
   padding-top: 318px;
-  padding-left: 965px;
+  padding-left: 815px;
   padding-bottom: 339px;
   background-image: url(assets/content-image-2.jpg);
   background-repeat: no-repeat;
-  background-position: 419px 120px;
+  background-position: 269px 120px;
 }
 
 .rich-code__btn {
@@ -331,17 +360,20 @@ body {
   color: #FFFFFF;
 }
 
-.subscription {
+.subscription__wrap {
   box-sizing: border-box;
   width: 1600px;
   margin: 0 auto;
   padding: 0;
   padding-top: 217px;
   padding-bottom: 277px;
-  background-image: url(/assets/subscribing.jpg);
+}
+
+.subscription {
+
+  background-image: url(assets/subscribing.jpg);
   background-repeat: no-repeat;
-  background-position-x: -2px;
-  background-size: contain;
+  background-position: -8px -615px;
   background-color: gray;
 }
 
@@ -351,11 +383,19 @@ body {
   display: block;
   border: none;
   margin: 0 auto;
-  padding-left: 20px;
+  padding-left: 24px;
   width: 340px;
   height: 46px;
   box-sizing: border-box;
+  
 }
+
+.subscription__input:hover,
+.subscription__input:active,
+.subscription__input:focus{
+  font-size: larger;
+}
+
 
 .subscription__form {
   width: 406px;
@@ -373,17 +413,34 @@ body {
   border: none;
   background-image: url(assets/check.svg);
   background-repeat: no-repeat;
-  background-position: 23px 16px;
+  background-position: 25px 16px;
+  outline: none;
 
 }
 
+.subscription__btn:hover{
+  background-color: #009CC2;
+  
+}
+
+.subscription__btn:active,
+.subscription__btn:focus {
+  background-color: #009CC2;
+  background-size: 22px;
+  top: -2px;
+  opacity: 0.7;
+}
+
 .download {
+  background-color: #F5F6F7;
+}
+
+.download__wrap {
   box-sizing: border-box;
   width: 1600px;
   margin: 0 auto;
   padding-top: 120px;
   padding-bottom: 180px;
-  background-color: #F5F6F7;
 }
 
 .download__title {
@@ -436,6 +493,7 @@ body {
 
 }
 
+
 .download__link--apple::after {
   position: absolute;
   content: url(assets/apple.svg);
@@ -460,10 +518,10 @@ body {
 }
 
 
-.footer__wrap{  
+.footer__wrap {
   width: 1600px;
   margin: 0 auto;
-  padding-top: 58px;
+  padding-top: 59px;
   padding-bottom: 60px;
   display: flex;
   flex-wrap: wrap;
@@ -485,7 +543,7 @@ body {
   line-height: 140%;
   color: #FFFFFF;
   opacity: 0.98;
-  
+
 }
 
 .footer__copyright {
@@ -499,11 +557,27 @@ body {
 
 }
 
-.footer__logo{
+.footer__logo {
   flex-grow: 1;
 }
 
-.footer__img{
+.footer__img {
   display: block;
   margin: 0 auto;
+}
+
+.footer__item {
+  position: relative;
+}
+
+.footer__item:not(:last-child)::after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 1px;
+  height: 8px;
+  background-color: #4E4E4E;
+  ;
+  right: -21px;
+  top: 7px;
 }
