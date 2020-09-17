@@ -394,6 +394,18 @@ body {
   background-position: 6px 8px;
 }
 
+.slyder__btn--end:disabled{
+  opacity: 0.1;
+}
+
+.slyder__item--current{
+  display: block;
+}
+
+.slyder__item--hidden{
+  display: none;
+}
+
 .rich-code {
   box-sizing: border-box;
   width: 1600px;
