@@ -382,7 +382,7 @@ body {
 }
 
 .slyder__btn:hover {
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .slyder__btn:active,
@@ -402,15 +402,15 @@ body {
   background-position: 6px 8px;
 }
 
-.slyder__btn--end:disabled{
+.slyder__btn--end:disabled {
   opacity: 0.1;
 }
 
-.slyder__item--current{
+.slyder__item--current {
   display: block;
 }
 
-.slyder__item--hidden{
+.slyder__item--hidden {
   display: none;
 }
 
@@ -510,7 +510,6 @@ body {
   background-color: #009CC2;
   background-size: 22px;
   top: -2px;
-  opacity: 0.7;
 }
 
 .download {
@@ -575,6 +574,10 @@ body {
 
 }
 
+.download__link:hover {
+  background: #009CC2;
+  opacity: 1;
+}
 
 .download__link--apple::after {
   position: absolute;
@@ -660,7 +663,6 @@ body {
   width: 1px;
   height: 8px;
   background-color: #4E4E4E;
-  ;
   right: -21px;
   top: 7px;
 }
