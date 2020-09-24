@@ -5,3 +5,7 @@
 Figma:
 
 **[webdev-latest-version. Figma](https://www.figma.com/file/2Zev0HVCKABbZoAsuWTdcD/webdev_newVersion-18.09?node-id=1%3A5)**  
+
+Вы можете посмотреть готовую верстку
+
+[# webdev](https://mauta.github.io/webdev/webdev/)
