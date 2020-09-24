@@ -8,4 +8,4 @@ Figma:
 
 Вы можете посмотреть готовую верстку
 
-[# webdev](https://mauta.github.io/webdev/webdev/)
+[webdev](https://mauta.github.io/webdev/webdev/)
