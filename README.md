@@ -1,6 +1,6 @@
 ## Task 1. WebDev для [RS School](https://rs.school/)
 
-![screenshot](webdev/webdev/assets/webdev.png)
+![](https://github.com/mauta/webdev/blob/master/webdev/assets/webdev.png)
 
 [Готовый WebDev](https://mauta.github.io/webdev/webdev/)
 
